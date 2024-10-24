@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1>Weather App</h1>
+            <div class="search-container">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search city" id="search-input">
+                    <button id="search-btn">Search</button>
+                </div>
+                <!-- Dropdown for Recent Searches -->
+                <select id="recent-cities" class="dropdown" style="display:none;"></select>
+            </div>
+        </header>
+
+        <!-- Today Overview Section -->
+        <section class="overview">
+            <h2>Today Overview</h2>
+            <div class="cards">
+                <!-- Main Weather Card -->
+                <div class="card big-card" id="main-weather">
+                    <h3>City Name</h3>
+                    <img id="weather-icon" src="" alt="Weather Icon" style="width: 50px; height: 50px;">
+                    <p>Temperature: N/A</p>
+                    <p>Weather: N/A</p>
+                    <p>Wind Speed: N/A</p>
+                </div>
+
+                <!-- Other Weather Details -->
+                <div class="card">
+                    <img src="project images/8726449_wind_icon.png" alt="Wind Speed Icon">
+                    <p>Wind Speed</p>
+                    <h4 id="wind-speed">N/A</h4>
+                </div>
+                <div class="card">
+                    <img src="project images/humidity.png" alt="Humidity Icon">
+                    <p>Humidity</p>
+                    <h4 id="humidity">N/A</h4>
+                </div>
+                <div class="card">
+                    <img src="project images/pressure.png" alt="Pressure Icon">
+                    <p>Pressure</p>
+                    <h4 id="pressure">N/A</h4>
+                </div>
+                <div class="card">
+                    <img src="project images/visibility.png" alt="Visibility Icon">
+                    <p>Visibility</p>
+                    <h4 id="visibility">N/A</h4>
+                </div>
+                <div class="card">
+                    <img src="project images/sunrise.png" alt="Sunrise Icon">
+                    <p>Sunrise</p>
+                    <h4 id="sunrise">N/A</h4>
+                </div>
+                <div class="card">
+                    <img src="project images/sunset.png" alt="Sunset Icon">
+                    <p>Sunset</p>
+                    <h4 id="sunset">N/A</h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Forecast Section -->
+        <section class="forecast">
+            <h2>Last 5 Days</h2>
+            <div class="forecast-cards" id="forecast-cards">
+                <!-- Forecast for each day (will be populated by JavaScript) -->
+                <div class="forecast-card">
+                    <p>Date</p>
+                    <h4>Temperature: N/A</h4>
+                    <p>Humidity: N/A</p>
+                </div>
+                <div class="forecast-card">
+                    <p>Date</p>
+                    <h4>Temperature: N/A</h4>
+                    <p>Humidity: N/A</p>
+                </div>
+                <div class="forecast-card">
+                    <p>Date</p>
+                    <h4>Temperature: N/A</h4>
+                    <p>Humidity: N/A</p>
+                </div>
+                <div class="forecast-card">
+                    <p>Date</p>
+                    <h4>Temperature: N/A</h4>
+                    <p>Humidity: N/A</p>
+                </div>
+                <div class="forecast-card">
+                    <p>Date</p>
+                    <h4>Temperature: N/A</h4>
+                    <p>Humidity: N/A</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

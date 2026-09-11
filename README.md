@@ -1,5 +1,4 @@
 
-Here's a README template for your weather forecast application, tailored to your project requirements. You can modify or expand it based on your preferences.
 
 Weather Forecast Application 🌦️
 This is a simple weather forecast application that provides current weather conditions and extended forecasts for any location. The app also features a search bar for users to look up weather data for different cities and includes a dropdown for recently searched locations. It's built using JavaScript, HTML, CSS, Tailwind CSS, and integrates with a weather API for real-time data.
